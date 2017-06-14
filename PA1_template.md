@@ -28,7 +28,7 @@ colnames(total)<- c("date", "steps")
 hist(total$steps, xlab="Total Steps")
 ```
 
-![plot of chunk Total steps per day](figure/Total steps per day-1.png)
+![plot of chunk Total steps per day](instructions_fig/Total steps per day-1.png)
 
 ```r
 summary(total$steps)
@@ -52,7 +52,7 @@ plot(daily$interval, daily$steps,type='l',xlab="Interval",ylab="Steps")
 lines(daily$interval, daily$steps)
 ```
 
-![plot of chunk Average activity pattern](figure/Average activity pattern-1.png)
+![plot of chunk Average activity pattern](instructions_fig/Average activity pattern-1.png)
 
 ```r
 index<- which.max(daily$steps)
@@ -94,7 +94,7 @@ colnames(total)<- c("date", "steps")
 hist(total$steps, xlab="Total Steps")
 ```
 
-![plot of chunk Impute NA](figure/Impute NA-1.png)
+![plot of chunk Impute NA](instructions_fig/Impute NA-1.png)
 
 ```r
 summary(total$steps)
@@ -106,7 +106,7 @@ summary(total$steps)
 ```
 
 ##4.Weekdays compare
-### 4.1 Create a new factor variable in the dataset with two levels – “weekday” and “weekend” indicating whether a given date is a weekday or weekend day.
+### 4.1 Create a new factor variable in the dataset with two levels â€“ â€œweekdayâ€ and â€œweekendâ€ indicating whether a given date is a weekday or weekend day.
 ### 4.2 Make a panel plot containing a time series plot (i.e. type = "l") of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all weekday days or weekend days (y-axis)
 
 ```r
@@ -129,7 +129,7 @@ library(ggplot2)
 qplot(interval, steps, data=week,facets=type~.) +geom_line()
 ```
 
-![plot of chunk Weekdays compare](figure/Weekdays compare-1.png)
+![plot of chunk Weekdays compare](instructions_fig/Weekdays compare-1.png)
 
 
 
